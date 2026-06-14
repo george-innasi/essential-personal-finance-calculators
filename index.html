@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Essential Personal Finance Calculators — George Innasi</title>
+<style>
+  :root{
+    --card:#15181c; --ink:#e7eaed; --heading:#ffffff; --muted:#99a2ab; --line:#2b3038;
+    --bg-soft:#1c2027;
+    --peach:#F8CA9D; --teal:#8EC9BB; --coral:#FB8E7E; --yellow:#F2CF59; --orange:#FA6E4F;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 30px rgba(0,0,0,.45);
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;color:var(--ink);min-height:100vh;
+    background:linear-gradient(165deg,#000 0%,#0d1014 55%,#000 100%);background-attachment:fixed;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased;padding:40px 20px 64px}
+  .wrap{max-width:920px;margin:0 auto}
+  .eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:10px}
+  h1{font-size:34px;line-height:1.15;margin:0 0 14px;letter-spacing:-.02em;color:var(--heading);font-weight:800}
+  @media(max-width:600px){h1{font-size:27px}}
+  .lead{font-size:16px;color:var(--ink);margin:0 0 14px}
+  .why{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:12px;padding:16px 18px;margin:18px 0 8px;color:var(--ink);font-size:15px}
+  .why b{color:var(--teal)}
+  .hint{font-size:13px;color:var(--muted);margin:18px 0 28px}
+  .hint a{color:var(--teal)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    padding:20px;display:flex;flex-direction:column}
+  .tag{display:inline-block;align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+    padding:3px 9px;border-radius:99px;margin-bottom:12px;color:#0c0f12}
+  .card h2{font-size:19px;margin:0 0 8px;color:var(--heading);font-weight:800;letter-spacing:-.01em}
+  .card p{margin:0 0 18px;color:var(--muted);font-size:14px;flex:1}
+  .open{align-self:flex-start;text-decoration:none;font-weight:700;font-size:14px;color:#0c0f12;
+    background:var(--teal);padding:9px 15px;border-radius:10px;transition:transform .12s ease,filter .12s ease}
+  .open:hover{filter:brightness(1.07);transform:translateY(-1px)}
+  .soon{border-style:dashed;background:transparent}
+  .soon .tag{background:var(--line);color:var(--muted)}
+  .soon h2{color:var(--muted)}
+  .disc{margin-top:34px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .disc h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 10px;font-weight:700}
+  .disc ul{margin:0;padding-left:18px;color:var(--muted);font-size:13px;line-height:1.7}
+  footer{margin-top:30px;font-size:12.5px;color:var(--muted);text-align:center}
+  footer a{color:var(--teal)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">George Innasi · Built from the front line</div>
+  <h1>Essential Personal Finance Calculators</h1>
+  <p class="lead">A growing hub of simple, honest calculators that answer the everyday money questions customers actually ask — clearly, and with the real math.</p>
+
+  <div class="why">
+    <b>Why these exist.</b> I've spent the past five years in the financial industry. These are the tools I always wished existed — to help customers understand the repeated questions I came across and the numbers I had to work out for them again and again. Each one turns a question I answered countless times at the counter into something anyone can see and explore for themselves.
+  </div>
+
+  <p class="hint">Tap any calculator to open it live. · <a href="https://github.com/george-innasi" target="_blank" rel="noopener">More on GitHub</a></p>
+
+  <div class="grid">
+
+    <div class="card">
+      <span class="tag" style="background:var(--peach)">Mortgage</span>
+      <h2>Visual Mortgage Calculator</h2>
+      <p>See how rapid payments, bigger payments and lump sums get you mortgage-free sooner — shown as a house that fills in with the equity you build. Uses correct Canadian mortgage math.</p>
+      <a class="open" style="background:var(--peach)" href="https://george-innasi.github.io/mortgage-equity-builder/" target="_blank" rel="noopener">Open calculator →</a>
+    </div>
+
+    <div class="card">
+      <span class="tag" style="background:var(--teal)">Savings</span>
+      <h2>Savings Promo Calculator</h2>
+      <p>Show exactly what a customer earns by parking money at a promo rate for 30, 60 or 90 days — daily accrual, paid and compounded monthly, with the precise maturity date and a plain-English summary.</p>
+      <a class="open" style="background:var(--teal)" href="https://george-innasi.github.io/savings-promo-calculator/" target="_blank" rel="noopener">Open calculator →</a>
+    </div>
+
+    <div class="card">
+      <span class="tag" style="background:var(--yellow)">GIC</span>
+      <h2>GIC Calculator</h2>
+      <p>Confirms the exact maturity date and applies the right Canadian rules: short-term GICs as simple interest at maturity, long-term GICs compounded or paid out monthly/annually.</p>
+      <a class="open" style="background:var(--yellow)" href="https://george-innasi.github.io/gic-calculator/" target="_blank" rel="noopener">Open calculator →</a>
+    </div>
+
+    <div class="card soon">
+      <span class="tag">Coming soon</span>
+      <h2>More on the way</h2>
+      <p>This hub grows over time — more everyday tools drawn from the questions customers ask most (e.g. RRSP/TFSA contributions, loan payments, currency, and budgeting). Check back as they ship.</p>
+    </div>
+
+  </div>
+
+  <div class="disc">
+    <h3>Disclosures</h3>
+    <ul>
+      <li>These calculators are educational tools that produce <b>estimates for illustration only</b>. They are not financial advice.</li>
+      <li>Exact figures, day-count conventions, posting dates, privilege limits and rounding <b>vary by institution</b> — always confirm with your bank or a qualified advisor before making a decision.</li>
+      <li>They run entirely in your browser and <b>do not collect, store, or transmit any of the numbers you enter.</b></li>
+      <li>Built independently as personal projects; not affiliated with or endorsed by any financial institution.</li>
+    </ul>
+  </div>
+
+  <footer>
+    Made by George Innasi · <a href="https://github.com/george-innasi" target="_blank" rel="noopener">github.com/george-innasi</a>
+  </footer>
+</div>
+</body>
+</html>
